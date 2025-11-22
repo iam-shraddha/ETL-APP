@@ -1,4 +1,4 @@
-name: Terraform Auto Apply
+name: Terraform Auto Apply 
 
 on:
   push:
