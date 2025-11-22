@@ -33,7 +33,7 @@ jobs:
 
       # Terraform Init
       - name: Terraform Init
-        run: terraform init
+        run: cd terraform && terraform init
 
       # Terraform Format Check
       - name: Terraform Format
@@ -41,11 +41,11 @@ jobs:
 
       # Terraform Validate
       - name: Terraform Validate
-        run: terraform validate
+        run: cd terraform && terraform validate
 
       # Terraform Plan
       - name: Terraform Plan
-        run: terraform plan -out=tfplan
+        run: cd terraform && terraform plan -out=tfplan
 
       # Terraform Apply Automatically
       - name: Terraform Apply
